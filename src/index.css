@@ -1,0 +1,19 @@
+
+/* Reset margin, padding, and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Optional: Apply `box-sizing: border-box` to all elements, pseudo-elements */
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Set a default box-sizing on the root element */
+  html {
+    box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
+  }
+  
