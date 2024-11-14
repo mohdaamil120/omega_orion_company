@@ -39,6 +39,7 @@ const DIV = styled.div`
         width: 1440px;
         background-color: #0C0C0C;
         margin: auto;
+        padding-bottom: 232px;
     }
     .comments__container{
         max-width: 1280px;

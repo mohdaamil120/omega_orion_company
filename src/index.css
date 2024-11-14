@@ -7,9 +7,9 @@
   }
   
   /* Optional: Apply `box-sizing: border-box` to all elements, pseudo-elements */
-  *, *::before, *::after {
+  /* *, *::before, *::after {
     box-sizing: inherit;
-  }
+  } */
   
   /* Set a default box-sizing on the root element */
   html {

@@ -6,6 +6,7 @@ import MailIcon from '../../SvgIcons/MailIcon'
 import BehanceIcon from '../../SvgIcons/BehanceIcon'
 import InstagramIcon from '../../SvgIcons/InstagramIcon'
 import DribbleIcon from '../../SvgIcons/DribbleIcon'
+import Uiwiki_img_svg from '../../SvgIcons/Uiwiki_img_svg'
 
 const Footer = () => {
   return (
@@ -40,6 +41,14 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+
+            <div className='uiwiki__image__container'>
+              <p>© 2024, Omega Orion Pvt. Ltd.</p>
+              {/* <img src={uiwiki} alt="" /> */}
+              <div className='uiwiki'>
+               <Uiwiki_img_svg/>
+              </div>
+            </div>
         </div>
     </DIV>
   )
@@ -53,9 +62,12 @@ const DIV=styled.div`
   }
   .main__container{
         width: 1440px;
+        height: 524px;
         margin: auto;
         background-color: #0C0C0C;
-        padding-top: 232px;
+        /* border: 1px solid red; */
+        overflow: hidden;
+        position: relative;
   }
 
   .footer__container{
@@ -145,12 +157,17 @@ const DIV=styled.div`
     }
 
     .contact__container{
-        width: 264px;
+        width: 266px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+       
     }
 
     .contact__container>p{
         color: #FFFFFF;
         width: 154px;
+        width: 160px;
         font-size: 18px;
         font-weight: 600;
         line-height: 25.1px;
@@ -167,5 +184,36 @@ const DIV=styled.div`
         border-radius: 82px;
         border: 1px solid #3D3D3D;
         background-color: #1F1F1F;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uiwiki__image__container{
+      /* max-width: 1280px; */
+      /* width: 100%; */
+      padding-left: 80px;
+      padding-right: 80px;
+      height: 586px;
+      margin: auto;
+      background-color: #1B1B1B;
+      margin-top: -34px;
+
+    }
+    .uiwiki__image__container>p{
+      margin-left: 164px;
+      margin-top: 6px;
+      /* width: 186px; */
+      /* height: 26px; */
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25.1px;
+      color: #494949;
+      font-family: 'Inter Tight', sans-serif;
+    }
+
+    .uiwiki{
+      margin-top: 85px;
     }
 `
