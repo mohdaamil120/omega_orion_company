@@ -64,9 +64,10 @@ const DIV = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:  rgba(0, 0, 0, 0.3);
+    /* background-color:  rgba(0, 0, 0, 0.3); */
+    background-color:  #000000;
     z-index: 1;  
-    opacity: 1;
+    opacity: 0.8;
     
   }
   
