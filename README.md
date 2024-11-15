@@ -15,6 +15,18 @@ Below are some screenshots showcasing the various views of the application:
 ###  ( Hero )
 <img src="Screenshots\1.png"/>
 
+###  ( Templates )
+<img src="Screenshots\2.png"/>
+
+###  ( Features )
+<img src="Screenshots\3.png"/>
+
+###  ( Comments )
+<img src="Screenshots\4.png"/>
+
+###  ( Footer )
+<img src="Screenshots\5.png"/>
+
 
 ### Mobile View
 
