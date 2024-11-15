@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import HeaderCover from "../../assets/header_cover1.png"
+import HeaderCover from "../../assets/header_cover2.png"
 import Navbar from './Navbar'
 import QuestionMarkICon from '../../SvgIcons/QuestionMarkICon'
 import FigmaIcon from '../../SvgIcons/FigmaIcon'
@@ -57,24 +57,6 @@ const DIV = styled.div`
   background-repeat: no-repeat;
   background-size: cover; 
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* background-color:  rgba(0, 0, 0, 0.3); */
-    background-color:  #000000;
-    z-index: 1;  
-    opacity: 0.8;
-    
-  }
-  
-  .navbar, .buttons {
-    position: relative;
-    z-index: 2;
-  }
 } 
 
 
@@ -85,7 +67,9 @@ const DIV = styled.div`
   gap: 12px;
   justify-content: end;
   margin-right: 80px;
-  margin-top: 127px;
+  /* margin-top: 127px; */
+  /* border: 1px solid red; */
+  margin-bottom: -27px;
 }
 
 .buttons > #firstBtn {
@@ -119,6 +103,8 @@ const DIV = styled.div`
   padding-bottom:15px;
   border-radius: 14px;
   font-family: 'Inter Tight', sans-serif;
+  line-height: 22px;
+  font-weight: 600;
   font-size: 18px;
   border: 1px solid #526600;
   background-color: #CCFF00;
