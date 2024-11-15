@@ -36,6 +36,7 @@ const Header = () => {
 
 export default Header
 
+
 const DIV = styled.div`
 * {
   font-family: 'Inter Tight', sans-serif;
@@ -59,9 +60,15 @@ const DIV = styled.div`
   
 } 
 
-
-
-
+.header__container>div{
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:100px;
+      }
+  }
 .buttons {
   display: flex;
   gap: 12px;
@@ -70,6 +77,14 @@ const DIV = styled.div`
   margin-top: 127px;
   /* border: 1px solid red; */
   margin-bottom: -27px;
+
+@media (max-width: 768px) {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 90px;
+  gap: 30px;
+  z-index: 1;
+}
 }
 
 .buttons > #firstBtn {
@@ -80,6 +95,7 @@ const DIV = styled.div`
   color: #FFFFFF;
   border: 1px solid #3D3D3D;
   z-index: 2;
+ 
 }
 
 #firstBtn > div {
@@ -111,7 +127,16 @@ const DIV = styled.div`
   color: #000000;
   z-index: 2; 
   cursor: pointer;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    width: 221px;
+  }
 }
+
+
+
+
 
 .name{
   width: 448px;
@@ -121,6 +146,13 @@ const DIV = styled.div`
   position: relative;
   margin-left: 80px;
   bottom: 40px;
+
+@media (max-width: 768px) {
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+}
 }
 
 .name >p{
@@ -128,7 +160,12 @@ const DIV = styled.div`
   font-size:32px;
   color: #FFFFFF;
   z-index: 2;
-  
+  @media (max-width: 768px) {
+    font-size:25px ;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 .name > div{

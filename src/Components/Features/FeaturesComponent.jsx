@@ -74,25 +74,38 @@ export default FeaturesComponent
 
 const DIV=styled.div`
  *{
-        font-family: 'Inter Tight', sans-serif;
+    font-family: 'Inter Tight', sans-serif;
   }
   .main__container{
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         margin: auto;
         background-color: #0C0C0C;
+     
   }
 
 
   .featured__container{
     display: flex;
     gap: 100px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding-left: 20px;
+        gap: 0px;
+    }
   }
 
 
   .description{
+    margin-top: 50px;
     margin-left: 100px;
     padding-bottom: 76px;    
     width : 597px;
+    @media (max-width: 768px) {
+        text-align:left;
+        margin-left: 0px;
+    }
   }
 
   .description h3 {
@@ -109,12 +122,20 @@ const DIV=styled.div`
       line-height: 24px;
       color: #FFFFFF;
       font-weight: 400; 
+
+      @media (max-width: 768px) {
+        font-size: 13px;
+        width: 340px;
+    }
     }
 
     .features{
         display: flex;
         flex-direction: column;
         gap: 40px;
+        @media (max-width: 768px) {
+            margin-bottom: 50px;
+        }
     }
     .features h3 {
       width: 95px;

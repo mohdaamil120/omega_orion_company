@@ -36,7 +36,8 @@ const DIV = styled.div`
     }
 
     .container{
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         background-color: #0C0C0C;
         margin: auto;
         padding-bottom: 232px;
@@ -54,6 +55,10 @@ const DIV = styled.div`
         padding-top: 40px;
         margin-bottom: 40px;
         font-size: 24px;
+        @media (max-width: 768px) {
+            font-size: 25px;
+            width: 340px;
+        }
     }
 
     .comments__container>p:nth-child(3){
@@ -63,6 +68,10 @@ const DIV = styled.div`
         color: #A1A1A1;
         margin-left: 40px;
         margin-bottom: 40px;
+        @media (max-width: 768px) {
+            font-size: 11px;
+            width: 310px;
+        }
     }
 
     .Commented__user__details{
@@ -71,6 +80,9 @@ const DIV = styled.div`
         align-items: center;
         margin-left: 40px;
         margin-bottom: 16px;
+        @media (max-width: 768px) {
+            width: 300px;
+        }
     }
     .Commented__user__details> .image__container{
         width: 60px;
@@ -112,6 +124,9 @@ const DIV = styled.div`
         align-items: center;
         /* gap: 902; */
         background-color: #1B1B1B;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     .comment__input__container> input{
@@ -124,6 +139,14 @@ const DIV = styled.div`
         margin-bottom: 38px;
         margin-left: 38px;
         color: #FFFFFF;
+        @media (max-width: 768px) {
+            font-size: 13px;
+            width: 90%;
+            border: 1px solid lightgray;
+            border-radius: 20px;
+            padding-left: 15px;
+            margin-left: 0px;
+        }
     }
    
     .comment__input__container > input::placeholder {

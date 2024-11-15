@@ -14,7 +14,7 @@ const Footer = () => {
         <div className='main__container'>
             <div className='footer__container'>
                 <FooterLogoIcon/>
-                <div className='first__optins'>
+                <div  className='first__optins'>
                     <p>Explore</p>
                     <p><span>FAQ</span></p>
                     <p>Pricing</p>
@@ -57,17 +57,22 @@ const Footer = () => {
 export default Footer
 
 const DIV=styled.div`
-    *{
-        font-family: 'Inter Tight', sans-serif;
-  }
+
+*{
+  font-family: 'Inter Tight', sans-serif;
+ }
   .main__container{
-        width: 1440px;
+        max-width: 1440px;
+          width: 100%; 
         height: 524px;
         margin: auto;
         background-color: #0C0C0C;
         /* border: 1px solid red; */
         overflow: hidden;
         position: relative;
+        @media (max-width: 768px) {
+           height: auto;
+        }
   }
 
   .footer__container{
@@ -75,7 +80,15 @@ const DIV=styled.div`
     padding-top: 40px;
     padding-left: 80px;
     display: flex;
+    /* Responsive layout using grid */
+    @media (max-width: 768px) {
+     display: flex;
+     flex-direction: column;
+    }
   }
+
+
+
 
   .first__optins {
     width: 152px;
@@ -83,6 +96,11 @@ const DIV=styled.div`
     flex-direction: column;
     gap: 26px;
     margin-left: 110px;
+    @media (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+   }
   }
   .second__optins
   {
@@ -91,6 +109,12 @@ const DIV=styled.div`
     flex-direction: column;
     gap: 26px;
     margin-left: 44px;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      margin-left: 0px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
   }
   .first__optins >p , .second__optins>p{
     font-size: 18px;
@@ -105,6 +129,11 @@ const DIV=styled.div`
 
   .third__optins {
     margin-left: 415px;
+    @media (max-width: 768px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: -30px;
+    }
   }
 
   .third__optins > p{
@@ -116,12 +145,13 @@ const DIV=styled.div`
     letter-spacing: 0px;
   }
 
+
   .third__optins > .email__container{
     width: 308px;
     border-radius: 12px;
     border: 1px solid #3D3D3D;
     background-color: #1F1F1F;
-    display: flex;
+    display: flex;   
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
@@ -173,9 +203,12 @@ const DIV=styled.div`
         line-height: 25.1px;
         letter-spacing: 0px;
     }
+
+
     .contact__container>div{
         width: 264px;
         display: flex;
+          flex-wrap: wrap; //new
         gap: 16px;
     }
     .contact__container>div>button{
@@ -199,6 +232,13 @@ const DIV=styled.div`
       margin: auto;
       background-color: #1B1B1B;
       margin-top: -34px;
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: center;      
+      align-items: center; */
+      @media (max-width: 768px) {
+
+      }
 
     }
     .uiwiki__image__container>p{
@@ -211,9 +251,25 @@ const DIV=styled.div`
       line-height: 25.1px;
       color: #494949;
       font-family: 'Inter Tight', sans-serif;
+      @media (max-width: 768px) {
+        margin-left: -30px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .uiwiki{
       margin-top: 85px;
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 140px;
+      }
     }
 `
+
+
+

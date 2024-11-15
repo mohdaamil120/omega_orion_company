@@ -31,25 +31,60 @@ const TemplateComponent = () => {
 export default TemplateComponent
 
 
-const DIV = styled.div`
+// const DIV = styled.div`
     
-    .templates_container {
+//     .templates_container {
+//     padding: 80px;
+//     width: 100%;
+//     width: 1440px;
+//     margin: auto;
+//     background-color: #0C0C0C;
+//   }
+
+//   .templates {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 40px;
+//   }
+
+//   .templates > img {
+//     width: 100%;          
+//     object-fit: cover;     
+//     border-radius: 12px;
+//   }
+
+// 
+
+
+
+const DIV = styled.div`
+  .templates_container {
     padding: 80px;
-    width: 1440px;
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 1440px;
     margin: auto;
-    background-color: #0C0C0C;
+    background-color: #0c0c0c;
   }
 
   .templates {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+
+    @media (max-width: 1024px) { /* Tablet View */
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) { /* Mobile View */
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
   }
 
   .templates > img {
-    width: 100%;          
-    object-fit: cover;     
+    width: 100%;
+    object-fit: cover;
     border-radius: 12px;
   }
-
-`
+`;
