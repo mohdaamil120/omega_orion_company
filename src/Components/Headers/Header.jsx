@@ -67,7 +67,7 @@ const DIV = styled.div`
   gap: 12px;
   justify-content: end;
   margin-right: 80px;
-  /* margin-top: 127px; */
+  margin-top: 127px;
   /* border: 1px solid red; */
   margin-bottom: -27px;
 }
