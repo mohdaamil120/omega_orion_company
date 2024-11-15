@@ -30,7 +30,24 @@ Below are some screenshots showcasing the various views of the application:
 
 ### Mobile View
 
+###  ( Hero )
+<img src="Screenshots\6.png"/>
 
+###  ( Hamburger )
+<img src="Screenshots\7.png"/>
+
+
+###  ( Templates )
+<img src="Screenshots\8.png"/>
+
+###  ( Descriptlion )
+<img src="Screenshots\9.png"/>
+
+###  ( Features )
+<img src="Screenshots\10.png"/>
+
+###  ( Footer )
+<img src="Screenshots\11.png"/>
 
 ## 🛠️ Technologies Used
 List and provide a brief overview of the technologies used in the project.
