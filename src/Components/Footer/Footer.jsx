@@ -179,6 +179,9 @@ const DIV=styled.div`
     margin-right: 8px;
     margin-left: 62px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .third__optins > .email__container>input::placeholder {
