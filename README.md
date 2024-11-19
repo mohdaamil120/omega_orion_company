@@ -2,6 +2,9 @@
 
 ## <a href="https://omega-orion.vercel.app/"> Demo</a> 
 
+# Important information !!
+I have implemented all the properties as per the Figma design to ensure an exact replica of the provided layout. If the design appears slightly off or not as expected, try zooming in and out in your browser to align the view. This will help match the design precisely as intended. And also i have tryed a bit implementation in mobile view i have also uploaded screen shots as well. 
+
 # Pixel Bloom: AI website agency
 
 This project is a **Figma design** implementation based on the provided Figma design. Built using **Vite** with **React** and **Styled-Components**, this project replicates the look and feel of the design with high attention to detail, ensuring the design is fully responsive across different devices.
